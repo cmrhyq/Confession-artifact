@@ -1,0 +1,44 @@
+/**
+ * <p></p>
+ * 
+ * @author Alan Huang
+ * @version v1.0.0
+ * @className userInfoEdit.css
+ * @project showLove
+ * @package static.css
+ * @date 2021/9/1-10:45
+ * @email cmrhyq@163.com
+ */
+.other{
+    background: #fff;
+}
+.table-box{
+    width: 900px;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+.btn-secondary{
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    line-height: 1.42857143;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: #fff none;
+    border: 1px solid rgba(33,150,243,.2);
+    box-shadow: 0 6px 13px -6px rgb(33 150 243 / 25%);
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 13px;
+    color: #2196f3;
+    text-align: center;
+    transition: all .3s ease;
+}

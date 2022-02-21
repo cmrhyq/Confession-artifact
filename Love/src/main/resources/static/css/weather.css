@@ -1,0 +1,53 @@
+/**
+ * <p></p>
+ * 
+ * @author Alan Huang
+ * @version v1.0.0
+ * @className weather.css
+ * @project showLove
+ * @package static.css
+ * @date 2021/8/30-0:20
+ * @email cmrhyq@163.com
+ */
+
+.weatherImg {
+    margin: 60px 0 20px;
+}
+
+.weatherImg .img-main {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 40px;
+}
+
+.weatherTips {
+    width: auto;
+    height: auto;
+}
+
+.weatherTips {
+    margin-left: 160px;
+}
+
+.weatherImg .weatherTips p {
+    margin-top: 10px;
+}
+
+.tipsTitle {
+    font-family: "Share Tech Mono", monospace;
+    color: #2381bf;
+    font-weight: bold;
+}
+
+.special {
+    font-family: "Share Tech Mono", monospace;
+    color: #fd6a34;
+    font-weight: bold;
+}
+
+.tipsBody {
+    font-family: "Share Tech Mono", monospace;
+    color: #565555;
+    padding: 5px;
+}

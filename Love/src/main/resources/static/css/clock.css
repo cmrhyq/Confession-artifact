@@ -1,0 +1,58 @@
+/**
+ * <p></p>
+ * 
+ * @author Alan Huang
+ * @version v1.0.0
+ * @className clock.java
+ * @project showLove
+ * @package static.css
+ * @date 2021/8/28-23:11
+ * @email cmrhyq@163.com
+ */
+p {
+    margin: 0;
+    padding: 0;
+}
+
+p.date,p.talk {
+    text-align: center;
+}
+
+.time-weather {
+    float: left;
+    width: 680px;
+}
+
+#clock {
+    font-family: "Share Tech Mono", monospace;
+    color: #4c8ebd;
+    text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10, 175, 230, 0);
+    margin: 60px 40px 0;
+}
+
+#clock .time {
+    letter-spacing: 0.05em;
+    font-size: 40px;
+    padding: 5px 0;
+}
+
+#clock .time:hover {
+    color: #f36a6a;
+    text-shadow: 0 0 20px #f89191, 0 0 20px rgba(10, 175, 230, 0);
+}
+
+#clock .date {
+    letter-spacing: 0.1em;
+    font-size: 24px;
+}
+
+#clock .date:hover {
+    color: #f36a6a;
+    text-shadow: 0 0 20px #f89191, 0 0 20px rgba(10, 175, 230, 0);
+}
+#clock .talk {
+    letter-spacing: 0.5em;
+    font-size: 18px;
+    margin: 15px;
+    text-shadow: 0 0 20px #fcc2ad, 0 0 20px rgba(10, 175, 230, 0);
+}

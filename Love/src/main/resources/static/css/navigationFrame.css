@@ -1,0 +1,157 @@
+/**
+ * <p></p>
+ *
+ * @author Alan Huang
+ * @version v1.0.0
+ * @className navigationFrame.css
+ * @project showLove
+ * @package static.css
+ * @date 2021/8/31-15:47
+ * @email cmrhyq@163.com
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a, img {
+    border: 0;
+}
+
+.social-btns .btn,
+.social-btns .btn:before,
+.social-btns .btn .fa {
+    transition: all 0.35s;
+    transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+
+.social-btns .btn:before {
+    top: 90%;
+    left: -110%;
+}
+
+.social-btns .btn .fa {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+}
+
+.social-btns .btn.facebook:hover {
+    background-color: #3b5998;
+}
+
+.social-btns .btn.facebook .fa {
+    color: #3b5998;
+}
+
+.social-btns .btn.twitter:hover {
+    background-color: #00aff0;
+}
+
+.social-btns .btn.twitter .fa {
+    color: #00aff0;
+}
+
+.social-btns .btn.google:hover {
+    background-color: #dc4a38;
+}
+
+.social-btns .btn.google .fa {
+    color: #dc4a38;
+}
+
+.social-btns .btn.instagram:hover {
+    background-color: #bf00ff;
+}
+
+.social-btns .btn.instagram .fa {
+    color: #bf00ff;
+}
+
+.social-btns .btn.pinterest:hover {
+    background-color: #cc0000;
+}
+
+.social-btns .btn.pinterest .fa {
+    color: #cc0000;
+    font-size: 25px;
+}
+
+.social-btns .btn:focus:before,
+.social-btns .btn:hover:before {
+    top: -10%;
+    left: -10%;
+}
+
+.social-btns .btn:focus .fa,
+.social-btns .btn:hover .fa {
+    color: #fff;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.btn-show {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 10px;
+    text-align: center;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 28%;
+    opacity: 0.8;
+    font-size: 0;
+    top: 850px;
+    bottom: 0;
+    right: 0;
+    background: #fff url("../img/system/open-up.png") center;
+    background-size: 50px 50px;
+}
+
+.social-btns {
+    height: 90px;
+    margin: auto;
+    font-size: 0;
+    text-align: center;
+    position: absolute;
+    top: 800px;
+    bottom: 0;
+    /*left: 0;*/
+    right: 0;
+}
+
+.social-btns .btn {
+    padding: 0;
+    display: inline-block;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 28%;
+    box-shadow: 0 5px 15px -5px rgb(0 0 0 / 64%);
+    opacity: 0.99;
+}
+
+.social-btns .btn:before {
+    content: "";
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.social-btns .btn .fa {
+
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.social-btns .btn i {
+    z-index: 1;
+}

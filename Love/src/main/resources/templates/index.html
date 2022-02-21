@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/logo.png" type="image/ico">
+    <link rel="shortcut" href="img/logo.png" type="image/ico">
+    <title>Show Love</title>
+    <link rel="stylesheet" href="css/weather.css">
+    <link rel="stylesheet" href="css/picture.css">
+    <link rel="stylesheet" href="css/clock.css">
+    <link rel="stylesheet" href="css/weatherIcon.css">
+    <link rel="stylesheet" href="css/navigationFrame.css">
+</head>
+<body>
+<div id="line">
+
+</div>
+<div class="time-weather">
+    <div class="weatherImg">
+        <div class="img-main"></div>
+        <div class="weatherTips">
+            <p><i class="tipsTitle">天气:</i><i class="tipsBody weather"></i></p>
+            <p><i class="tipsTitle">温度:</i><i class="tipsBody temp"></i></p>
+            <p><i class="tipsTitle">风向:</i><i class="tipsBody wind"></i></p>
+            <p><i class="special">提醒:</i><i class="tipsBody tips"></i></p>
+        </div>
+    </div>
+    <div id="clock">
+        <p class="date">2020-11-4 21:00:00 星期三</p>
+        <p class="time"></p>
+        <p class="talk" style="color: #fca585;">你是我疲惫一天还满心欢喜期待着的人</p>
+    </div>
+</div>
+<div class="btn-show" onclick="showNav()"></div>
+<div class="social-btns" style="display: none">
+    <a class="btn facebook" href="#" title="账号"><i class="fa">账号</i></a>
+    <a class="btn twitter" href="#"><i class="fa"></i></a>
+    <a class="btn google" href="#"><i class="fa"></i></a>
+    <a class="btn instagram" href="userInfoEdit" title="设置"><i class="fa">设置</i></a>
+    <a class="btn pinterest" href="#" onclick="hideNav()"><i class="fa">×</i></a>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.7.2-min.js"></script>
+<script type="text/javascript" src="js/vue.js"></script>
+<script type="text/javascript" src="js/echarts.min.js"></script>
+<script type="text/javascript" src="js/picture.js"></script>
+<script type="text/javascript" src="js/loveTime.js"></script>
+<script type="text/javascript" src="js/navFrame.js"></script>
+<script type="text/javascript" src="js/weatherImg.js"></script>
+<script>
+    /**
+     * 加载基本的功能
+     */
+    window.onload = function () {
+        weather();
+        todayWeather();
+    }
+</script>

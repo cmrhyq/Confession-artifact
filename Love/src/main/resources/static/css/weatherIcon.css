@@ -1,0 +1,66 @@
+/**
+ * <p></p>
+ * 
+ * @author Alan Huang
+ * @version v1.0.0
+ * @className weatherIcon.css
+ * @project showLove
+ * @package static.css
+ * @date 2021/8/30-10:58
+ * @email cmrhyq@163.com
+ */
+/*白天有雨*/
+.dayRain{
+    background: url("../img/weather/dayRain.png");
+    background-size: 100% 100%;
+}
+/*日落*/
+.sunset{
+    background: url("../img/weather/sunset.png");
+    background-size: 100% 100%;
+}
+/*日出*/
+.sunrise{
+    background: url("../img/weather/sunrise.png");
+    background-size: 100% 100%;
+}
+/*暴风雪*/
+.blizzard{
+    background: url("../img/weather/blizzard.png");
+    background-size: 100% 100%;
+}
+/*摄氏度*/
+.celsius{
+    background: url("../img/weather/celsius.png");
+    background-size: 100% 100%;
+}
+/*华氏度*/
+.fahrenheit{
+    background: url("../img/weather/fahrenheit.png");
+    background-size: 100% 100%;
+}
+/*蓝色预警*/
+.blueWarning{
+    background: url("../img/weather/blueWarning.png");
+    background-size: 100% 100%;
+}
+/*多云*/
+.cloudy{
+    background: url("../img/weather/cloudy.png");
+    background-size: 100% 100%;
+}
+/*东风*/
+.eastWind{
+    background: url("../img/weather/cloudy.png");
+    background-size: 100% 100%;
+}
+/*白天*/
+.day{
+    background: url("../img/weather/sunny-day.png");
+    background-size: 100% 100%;
+}
+/*夜晚*/
+.night{
+    background: url("../img/weather/sunny-night.png");
+    background-size: 100% 100%;
+}

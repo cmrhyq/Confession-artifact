@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/logo.png" type="image/ico">
+    <link rel="shortcut" href="img/logo.png" type="image/ico">
+    <title>系统配置</title>
+    <link rel="stylesheet" href="css/userInfoEdit.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/navigationFrame.css">
+</head>
+<body style="background-color: #ece6dd;">
+<div id="app" class="table-box">
+    <div class="panel panel-primary other">
+        <div class="panel-body form-inline">
+            <label>
+                搜索:<input type="text" class="form-control">
+            </label>
+            <label>
+                <input type="button" value="搜索" class="search-btn btn btn-info">
+            </label>
+            <label>
+                <input type="button" value="重置" class="btn btn-warning" onclick="resetSearchInfo()">
+            </label>
+        </div>
+    </div>
+    <table class="table table-bordered table-hover table-striped other" id="table_id">
+        <thead>
+        <tr>
+            <th>序号</th>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>手机号</th>
+            <th>帐号状态</th>
+            <th>城市</th>
+            <th>发送成功次数</th>
+            <th>发送失败次数</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td colspan="8">暂无数据</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="btn-show" onclick="showNav()"></div>
+<div class="social-btns" style="display: none">
+    <a class="btn facebook" href="#" title="账号"><i class="fa">账号</i></a>
+    <a class="btn twitter" href="#"><i class="fa"></i></a>
+    <a class="btn google" href="#"><i class="fa"></i></a>
+    <a class="btn instagram" href="userInfoEdit" title="设置"><i class="fa">设置</i></a>
+    <a class="btn pinterest" href="#" onclick="hideNav()"><i class="fa">×</i></a>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.7.2-min.js"></script>
+<script type="text/javascript" src="js/message.js"></script>
+<script type="text/javascript" src="js/tipsInfo.js"></script>
+<script type="text/javascript" src="js/userInfoEdit.js"></script>
+<script type="text/javascript" src="js/navFrame.js"></script>
+<script>
+    /**
+     * 搜索的方法
+     */
+    $(".search-btn").click(function () {
+        var searchText = $(".form-control").val();
+        $("#table_id tbody tr").hide().filter(":contains('" + searchText + "')").show();
+        $("#table_id tbody tr td").each(function () {
+            $(this).html($(this).html().replace(searchText, '<span style="color: #1aa160;font-size: 18px">' + searchText + '</span>'));
+        })
+    })
+
+    window.onload = function () {
+        loadData();
+    }
+</script>

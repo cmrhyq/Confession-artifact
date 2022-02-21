@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "management.endpoint.health.show-details",
+      "type": "java.lang.String",
+      "description": "Description for management.endpoint.health.show-details."
+    },
+    {
+      "name": "management.endpoints.jmx.exposure.include",
+      "type": "java.lang.String",
+      "description": "Description for management.endpoints.jmx.exposure.include."
+    }
+  ] }
